@@ -11,10 +11,10 @@ public class Main {
 
             // Prompt the user for input
             System.out.println("Enter the first operand:");
-            Integer input1 = scanner.nextInt();
+            Double input1 = scanner.nextDouble();
 
             System.out.println("Enter the second operand:");
-            Integer input2 = scanner.nextInt();
+            Double input2 = scanner.nextDouble();
 
             System.out.println("Enter the operation (ADD, SUBTRACT, MULTIPLY, DIVIDE):");
             String operationInput = scanner.next();

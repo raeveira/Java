@@ -18,8 +18,8 @@ public class Calculator {
      * @param operation The operation to perform
      * @return The result of the calculation as a String
      */
-    public CalculationResult calculate(Integer input1, Integer input2, Operation operation) {
-        int output;
+    public CalculationResult calculate(Double input1, Double input2, Operation operation) {
+        Double output;
 
         try {
             // Check if the operation is null
@@ -47,7 +47,9 @@ public class Calculator {
             return new CalculationResult(null, "An error occurred: " + illArgExc.getMessage());
         }
 
+        double roundedOutput = Math.round(output * 100.0) / 100.0;
+
         // Return the result as a String
-        return new CalculationResult(Integer.toString(output), null);
+        return new CalculationResult(Double.toString(roundedOutput), null);
     }
 }
