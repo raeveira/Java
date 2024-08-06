@@ -9,13 +9,6 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "com.javaproj.Main",
-            "projectName": "Raeveira Java_b5ea208b"
         }
     ]
 }
