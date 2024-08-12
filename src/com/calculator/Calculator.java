@@ -47,9 +47,7 @@ public class Calculator {
             return new CalculationResult(null, "An error occurred: " + illArgExc.getMessage());
         }
 
-        double roundedOutput = Math.round(output * 100.0) / 100.0;
-
         // Return the result as a String
-        return new CalculationResult(Double.toString(roundedOutput), null);
+        return new CalculationResult(Double.toString(output), null);
     }
 }

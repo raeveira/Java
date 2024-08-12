@@ -3,6 +3,11 @@ package com.calculator;
 import java.util.Scanner;
 
 public class Main {
+
+    private static Double input1;
+    private static Double input2;
+    private static String operationInput;
+
     public static void main(String[] args) throws Exception {
 
         try (Scanner scanner = new Scanner(System.in)) {
@@ -11,13 +16,13 @@ public class Main {
 
             // Prompt the user for input
             System.out.println("Enter the first operand:");
-            Double input1 = scanner.nextDouble();
+            input1 = scanner.nextDouble();
 
             System.out.println("Enter the second operand:");
-            Double input2 = scanner.nextDouble();
+            input2 = scanner.nextDouble();
 
             System.out.println("Enter the operation (ADD, SUBTRACT, MULTIPLY, DIVIDE):");
-            String operationInput = scanner.next();
+            operationInput = scanner.next();
 
             // Convert the string input to the enum value
             Calculator.Operation operation;
@@ -44,7 +49,7 @@ public class Main {
             // Close the scanner
             scanner.close();
         } catch (Exception e) {
-            System.out.println("An error occurred: " + e.getMessage());
+                System.out.println("An error occurred: " + e.getMessage());
         }
     }
 }
